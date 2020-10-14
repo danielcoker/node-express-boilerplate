@@ -5,7 +5,7 @@
   "main": "./src/index.js",
   "scripts": {
     "dev": "nodemon ./src/index",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:integration": "set NODE_ENV=test && mocha ./src/tests/api/v1/integration/**/*.js --exit"
   },
   "repository": {
     "type": "git",
@@ -41,6 +41,7 @@
     "mongoose": "^5.10.9",
     "morgan": "^1.10.0",
     "nconf": "^0.10.0",
+    "superagent": "^6.1.0",
     "uuid": "^8.3.1"
   },
   "devDependencies": {
