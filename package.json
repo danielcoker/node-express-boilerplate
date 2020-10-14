@@ -1,0 +1,42 @@
+{
+  "name": "express-boilerplate",
+  "version": "1.0.0",
+  "description": "Nodejs/Express project boilerplate.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielcoker/node-express-boilerplate.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express"
+  ],
+  "author": "Daniel Coker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielcoker/node-express-boilerplate/issues"
+  },
+  "homepage": "https://github.com/danielcoker/node-express-boilerplate#readme",
+  "dependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/register": "^7.11.5",
+    "core-js": "^3.6.5",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "express": "^4.17.1",
+    "joi": "^17.2.1",
+    "log4js": "^6.3.0",
+    "mongoose": "^5.10.9",
+    "morgan": "^1.10.0",
+    "nconf": "^0.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.5"
+  }
+}
