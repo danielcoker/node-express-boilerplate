@@ -1,0 +1,9 @@
+{
+  "colors": true,
+  "timeout": 10000,
+  "require": [
+    "@babel/register",
+    "./src/tests/helpers/start-server.js",
+    "./src/tests/helpers/globals.helper.js"
+  ]
+}
