@@ -4,6 +4,7 @@ import morgan from 'morgan';
 
 import validateBody from './validateBody';
 
+import appRoutes from './appRoutes';
 import errorHandler from './errorHandler';
 
 import responseHandler from './response';
@@ -15,6 +16,8 @@ const attachMiddlewares = (app) => {
 
   // Add res.respond
   app.use(responseHandler);
+
+  app.use('/api/v1', appRoutes);
 
   // Error handler middleware.
   app.use(errorHandler);
