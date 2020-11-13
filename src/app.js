@@ -1,6 +1,6 @@
 import nconf from 'nconf';
 import express from 'express';
-import attachMiddlewares from './middlewares';
+import attachMiddlewares from './middlewares/attachMiddlewares';
 
 import './libs/setupMongoose';
 
