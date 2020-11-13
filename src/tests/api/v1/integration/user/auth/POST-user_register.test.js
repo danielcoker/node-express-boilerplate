@@ -5,10 +5,9 @@ const generateRandomEmail = () => `${(Date.now() + uuidv4()).substring(0, 20)}@e
 
 describe('POST /users/auth/register', () => {
   const endpoint = '/users/auth/register';
+  let api;
 
   context('email is free', () => {
-    let api;
-
     beforeEach(async () => {
       api = requester();
     });
@@ -32,14 +31,13 @@ describe('POST /users/auth/register', () => {
   });
 
   context('login is already taken', () => {
-    let api;
     let email;
 
     beforeEach(async () => {
       api = requester();
       email = generateRandomEmail();
 
-      return generateUser({ email });
+      await generateUser({ email });
     });
 
     it('rejects if email is already taken', async () => {
