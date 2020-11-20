@@ -1,6 +1,10 @@
+<!-- intro -->
+
 # Nodejs/Express Project Boilerplate
 
 Nodejs/Express project boilerplate to help cut through initial project setup. Boilerplate includes project files structure, routing, database setup (using mongoose), testing.
+
+<!-- introstop -->
 
 Check example project using this boilerplate [here](https://github.com/danielcoker/node-blog).
 
