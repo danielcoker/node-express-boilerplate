@@ -5,7 +5,7 @@
   "main": "./src/index.js",
   "scripts": {
     "dev": "nodemon ./src/index",
-    "test:integration": "set NODE_ENV=test && mocha ./src/tests/api/v1/integration/**/*.js --exit"
+    "test:integration": "export NODE_ENV=test || set NODE_ENV=test && mocha ./src/tests/api/v1/integration/**/*.js --exit"
   },
   "repository": {
     "type": "git",
